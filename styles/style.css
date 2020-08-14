@@ -86,7 +86,6 @@ header, section, footer {
 
 .two-columns {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -110,6 +109,7 @@ header, section, footer {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0 0;
 }
 
 .two-columns__span-accent {
@@ -117,8 +117,121 @@ header, section, footer {
   font-size: 24px;
   font-weight: normal;
   padding: 30px 0;
+  display: flex;
   flex-wrap: nowrap;
 }
+
+.digits {
+  margin: 100px 0;
+}
+
+.section-title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  margin: 0 auto;
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.table__cell {
+  flex-wrap: wrap;
+  width: 250px;
+  margin-top: 60px;
+  outline: 1px solid red;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0;
+}
+ .table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  margin: 20px 0;
+ }
+
+.feynman {
+  position: relative;
+  min-height: 790px;
+  background-color: #F2F2F2;
+  outline: 1px solid red;
+}
+
+.feynman::after {
+  content: '';
+  position: absolute;
+  background-image: url(../images/feynman.png);
+  width: 867px;
+  height: 637px;
+  left: 0;
+  bottom: 0;
+}
+
+.feynman__title {
+  position: relative;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  margin: 0 auto;
+  top: 100px;
+  text-align: center;
+  z-index: 200;
+  outline: 1px solid red;
+}
+
+.feynman__subtitle {
+  position: relative;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  top: 70px;
+  text-align: center;
+  z-index: 200;
+  outline: 1px solid red;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  z-index: 200;
+  outline: 1px solid red;
+}
+
+.kaufman {
+  padding: 100px 0;
+  background-color: #1F1F1F;
+}
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
