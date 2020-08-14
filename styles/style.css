@@ -22,6 +22,7 @@ header, section, footer {
 
 .header__subtitle_link {
   text-decoration: none;
+  color: #4381E9;
 }
 
 .logo_place_header {
@@ -170,52 +171,49 @@ header, section, footer {
  .table__text {
   line-height: 1.2;
   font-size: 18px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
  }
 
 .feynman {
   position: relative;
   min-height: 790px;
   background-color: #F2F2F2;
+  z-index: -1;
   outline: 1px solid red;
 }
 
-.feynman::after {
-  content: '';
+.feynman__img {
   position: absolute;
-  background-image: url(../images/feynman.png);
   width: 867px;
   height: 637px;
   left: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .feynman__title {
-  position: relative;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   margin: 0 auto;
-  top: 100px;
+  padding-top: 100px;
   text-align: center;
-  z-index: 200;
   outline: 1px solid red;
 }
 
 .feynman__subtitle {
-  position: relative;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  top: 70px;
+  margin-top: 70px;
   text-align: center;
-  z-index: 200;
   outline: 1px solid red;
 }
 
 .feynman__link {
   line-height: 51px;
   font-size: 36px;
+  color: #4381E9;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -225,18 +223,54 @@ header, section, footer {
 }
 
 .kaufman {
-  padding: 100px 0;
+  padding: 90px 0;
   background-color: #1F1F1F;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
 }
 
-
-
-
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   right: 0;
-  top: 80px;
+  margin-top: 80px;
+}
+
+.section-title_theme_dark {
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  width: 60%;
+}
+
+.section-subtitle_theme_dark {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  width: 60%;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
