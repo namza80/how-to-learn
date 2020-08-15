@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 header, section, footer {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .header {
   height: 100vh;
@@ -25,14 +25,17 @@ header, section, footer {
   color: #4381E9;
 }
 
+.logo {
+  position: absolute;
+  z-index: 1;
+  /* outline: 1px solid red; */
+}
+
 .logo_place_header {
   width: 183px;
   height: 32px;
   top: 30px;
   left: 64px;
-  position: absolute;
-  z-index: 1;
-  outline: 1px solid red;
 }
 
 .header__title {
@@ -44,7 +47,7 @@ header, section, footer {
   font-size: 102px;
   font-weight: bold;
   z-index: 2;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .header__subtitle {
@@ -56,7 +59,7 @@ header, section, footer {
   font-weight: normal;
   position: absolute;
   z-index: 2;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .header__main-illustration {
@@ -66,7 +69,7 @@ header, section, footer {
   right: 0;
   bottom: 0;
   z-index: 1;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -77,7 +80,7 @@ header, section, footer {
   top: 64px;
   right: 0;
   position: absolute;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .description {
@@ -97,13 +100,13 @@ header, section, footer {
   font-size: 18px;
   font-weight: normal;
   color: #2F80ED;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .two-columns__paragraph {
@@ -132,7 +135,7 @@ header, section, footer {
   font-size: 60px;
   margin: 0 auto;
   text-align: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .section-subtitle {
@@ -142,7 +145,7 @@ header, section, footer {
   font-weight: normal;
   margin: 20px auto 0 auto;
   text-align: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .table {
@@ -152,14 +155,14 @@ header, section, footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .table__cell {
   flex-wrap: wrap;
   width: 250px;
   margin-top: 60px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .table__heading {
@@ -179,7 +182,7 @@ header, section, footer {
   min-height: 790px;
   background-color: #F2F2F2;
   z-index: -1;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .feynman__img {
@@ -198,7 +201,7 @@ header, section, footer {
   margin: 0 auto;
   padding-top: 100px;
   text-align: center;
-  outline: 1px solid red;
+  /* /* outline: 1px solid red; */ */
 }
 
 .feynman__subtitle {
@@ -207,7 +210,7 @@ header, section, footer {
   font-weight: normal;
   margin-top: 70px;
   text-align: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .feynman__link {
@@ -219,7 +222,7 @@ header, section, footer {
   top: 50%;
   right: 48px;
   z-index: 200;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .kaufman {
@@ -273,4 +276,67 @@ header, section, footer {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer {
+  background-color: #1F1F1F;
+  padding: 60px 0 40px 0;
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 350px;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  /* outline: 1px solid red; */
+}
+
+.footer__columns_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  display: flex;
+  align-items: flex-start;
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  display: flex;
+  align-items: flex-end;
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 16px 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+
+.footer__column-links a:link {
+  color: #fff;
+  text-decoration: none;
 }
