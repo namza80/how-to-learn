@@ -307,18 +307,18 @@ header, section, footer {
 .footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
-  display: flex;
-  align-items: flex-start;
+  position: relative;
   width: 183px;
   height: 35px;
 }
 
 .footer__author {
-  display: flex;
-  align-items: flex-end;
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
