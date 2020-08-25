@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,14 +25,15 @@ header, section, footer {
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .header__link {
   text-decoration: none;
-  color: #4381E9;
+  color: #2f80ed;
 }
 
 .logo {
@@ -77,10 +87,11 @@ header, section, footer {
 .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   top: 64px;
   right: 0;
   position: absolute;
+  animation: rotation 20s linear infinite;
   /* outline: 1px solid red; */
 }
 
@@ -101,7 +112,7 @@ header, section, footer {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color: #2F80ED;
+  color: #2f80ed;
   margin: 0;
   /* outline: 1px solid red; */
 }
@@ -128,6 +139,44 @@ header, section, footer {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.techniques {
+  margin: 100px auto 0 auto;
+  width: 80%;
+}
+
+.cards {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px 100px;
+  width: 920px;
+  margin: 0 auto;
+}
+
+.cards__item {
+
+}
+
+.cards__title {
+  text-align: center;
+}
+
+.cards__description {
+  text-align: center;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  margin: 60px 40px 43px 40px;
+
+
 }
 
 .digits {
@@ -185,7 +234,7 @@ header, section, footer {
 .feynman {
   position: relative;
   min-height: 790px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding-top: 100px;
   /* outline: 1px solid red; */
 }
@@ -234,7 +283,7 @@ header, section, footer {
 
 .kaufman {
   padding: 90px 0;
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
 }
