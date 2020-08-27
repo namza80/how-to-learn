@@ -1,0 +1,5 @@
+.logo {
+  position: absolute;
+  z-index: 1;
+  /* outline: 1px solid red; */
+}
