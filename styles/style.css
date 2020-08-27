@@ -34,6 +34,12 @@ header, section, footer {
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition-duration: .5s;
+}
+
+.header__link:hover {
+  opacity: 70%;
+  transition-duration: 1s;
 }
 
 .logo {
@@ -96,11 +102,12 @@ header, section, footer {
 }
 
 .description {
-  width: 80%;
-  margin: 100px auto 0 auto;
+  margin-top: 100px;
 }
 
 .two-columns {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -127,12 +134,12 @@ header, section, footer {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0 0 30px 0;
+  margin: 30px 0 0 0;
   /* outline: 1px solid red; */
 }
 
-.two-columns__paragraph:nth-child(3) {
-  margin-bottom: 0;
+.two-columns__paragraph:nth-child(1) {
+  margin-top: 0;
 }
 
 .two-columns__span-accent {
@@ -144,7 +151,7 @@ header, section, footer {
 .techniques {
   margin: 100px auto 0 auto;
   width: 80%;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .cards {
@@ -157,11 +164,11 @@ header, section, footer {
   grid-gap: 0 100px;
   width: 920px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .cards__item {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .cards__title {
@@ -170,7 +177,7 @@ header, section, footer {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .cards__description {
@@ -179,7 +186,7 @@ header, section, footer {
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .cards__image {
@@ -187,7 +194,7 @@ header, section, footer {
   height: 160px;
   border-radius: 80px;
   margin: 60px 40px 43px 40px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .video {
@@ -214,12 +221,87 @@ header, section, footer {
 }
 
 .oakley {
-  padding: 160px 160px 0 160px;
+  padding-top: 160px;
   background-color: #f2f2f2;
 }
 
 .digits {
   margin: 100px 0;
+}
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 50px 0 0 0;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 36px 0 0 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0 0 0;
+}
+
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 68px 0 0 0;
+
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  margin-left: 48px;
+  transition-duration: .5s;
+}
+
+.khan__buy-link:hover {
+  opacity: 70%;
+  transition-duration: 1s;
 }
 
 .section-title {
@@ -317,7 +399,13 @@ header, section, footer {
   top: 50%;
   right: 48px;
   z-index: 2;
+  transition-duration: .5s;
   /* outline: 1px solid red; */
+}
+
+.feynman__link:hover {
+  opacity: 70%;
+  transition-duration: 1s;
 }
 
 .kaufman {
@@ -335,6 +423,7 @@ header, section, footer {
   position: absolute;
   right: -210px;
   top: 0;
+  animation: rotation 20s linear infinite;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -372,6 +461,20 @@ header, section, footer {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.resources {
+  margin: 100px 0 217px 0;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+  margin: 80px auto 0 auto;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
