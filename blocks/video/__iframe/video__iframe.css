@@ -5,6 +5,6 @@
   border: 0;
 }
 
-.video__iframe:nth-child(2) {
+.video__iframe:last-child {
   margin-right: 0;
 }
