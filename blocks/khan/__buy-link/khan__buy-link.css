@@ -6,6 +6,7 @@
   color: #2f80ed;
   margin-left: 48px;
   transition-duration: .5s;
+  /* align-self: start; */
 }
 
 .khan__buy-link:hover {
